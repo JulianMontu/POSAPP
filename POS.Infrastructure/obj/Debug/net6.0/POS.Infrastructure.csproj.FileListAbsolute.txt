@@ -1,0 +1,17 @@
+E:\CursoPos\POSAPP\POSAPP\POS.Infrastructure\bin\Debug\net6.0\POS.Infrastructure.deps.json
+E:\CursoPos\POSAPP\POSAPP\POS.Infrastructure\bin\Debug\net6.0\POS.Infrastructure.dll
+E:\CursoPos\POSAPP\POSAPP\POS.Infrastructure\bin\Debug\net6.0\POS.Infrastructure.pdb
+E:\CursoPos\POSAPP\POSAPP\POS.Infrastructure\obj\Debug\net6.0\POS.Infrastructure.csproj.AssemblyReference.cache
+E:\CursoPos\POSAPP\POSAPP\POS.Infrastructure\obj\Debug\net6.0\POS.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+E:\CursoPos\POSAPP\POSAPP\POS.Infrastructure\obj\Debug\net6.0\POS.Infrastructure.AssemblyInfoInputs.cache
+E:\CursoPos\POSAPP\POSAPP\POS.Infrastructure\obj\Debug\net6.0\POS.Infrastructure.AssemblyInfo.cs
+E:\CursoPos\POSAPP\POSAPP\POS.Infrastructure\obj\Debug\net6.0\POS.Infrastructure.csproj.CoreCompileInputs.cache
+E:\CursoPos\POSAPP\POSAPP\POS.Infrastructure\obj\Debug\net6.0\POS.Infrastructure.dll
+E:\CursoPos\POSAPP\POSAPP\POS.Infrastructure\obj\Debug\net6.0\refint\POS.Infrastructure.dll
+E:\CursoPos\POSAPP\POSAPP\POS.Infrastructure\obj\Debug\net6.0\POS.Infrastructure.pdb
+E:\CursoPos\POSAPP\POSAPP\POS.Infrastructure\obj\Debug\net6.0\ref\POS.Infrastructure.dll
+E:\CursoPos\POSAPP\POSAPP\POS.Infrastructure\bin\Debug\net6.0\POS.Domain.dll
+E:\CursoPos\POSAPP\POSAPP\POS.Infrastructure\bin\Debug\net6.0\POS.Utilities.dll
+E:\CursoPos\POSAPP\POSAPP\POS.Infrastructure\bin\Debug\net6.0\POS.Domain.pdb
+E:\CursoPos\POSAPP\POSAPP\POS.Infrastructure\bin\Debug\net6.0\POS.Utilities.pdb
+E:\CursoPos\POSAPP\POSAPP\POS.Infrastructure\obj\Debug\net6.0\POS.Infrastructure.csproj.CopyComplete
