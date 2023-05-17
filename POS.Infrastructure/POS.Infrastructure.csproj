@@ -7,9 +7,6 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="DTOS\" />
-    <Folder Include="Helpers\" />
-    <Folder Include="Persistence\Interfaces\" />
     <Folder Include="Persistence\Repositories\" />
   </ItemGroup>
 
