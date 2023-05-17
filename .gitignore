@@ -1,0 +1,14 @@
+# Carpeta de archivos de compilación de Visual Studio
+obj/
+bin/
+
+# Carpeta de archivos temporales de Visual Studio
+.vs/
+
+# Carpeta de archivos de configuración de usuario de Visual Studio
+.vscode/
+
+# Archivo de configuración del usuario de Visual Studio
+*.suo
+*.user
+*.sln.docstates
