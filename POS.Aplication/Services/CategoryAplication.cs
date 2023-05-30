@@ -6,6 +6,7 @@ using POS.Aplication.Interfaces;
 using POS.Aplication.Validators.Category;
 using POS.Infrastructure.Commons.Bases;
 using POS.Infrastructure.Persistence.Interfaces;
+using POS.Utilities.Statics;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -26,14 +27,42 @@ namespace POS.Aplication.Services
             _mapper = mapper;
             _validatorRules = validatorRules;
         }
-        public Task<BaseResponse<BaseEntityResponse<CategoryResponseDTO>>> ListCategories(BaseFiltersRequest filters)
+        public async Task<BaseResponse<BaseEntityResponse<CategoryResponseDTO>>> ListCategories(BaseFiltersRequest filters)
         {
-            throw new NotImplementedException();
+            var response = new BaseResponse<BaseEntityResponse<CategoryResponseDTO>>();
+            var categories = await _unitOfWork.Category.ListCategories(filters);
+            if(categories is not null)
+            {
+                response.IsSucces = true;
+                response.Data = _mapper.Map<BaseEntityResponse<CategoryResponseDTO>>(categories);
+                response.Message = ReplyMessages.MESSAGE_QUERY;
+            }
+            else
+            {
+                response.IsSucces = false;
+                response.Message= ReplyMessages.MESSAGE_QUERY_EMPTY;
+            }
+            return response;
         }
 
-        public Task<BaseResponse<IEnumerable<CategorySelectResponseDTO>>> ListSelectCategories()
+        public async Task<BaseResponse<IEnumerable<CategorySelectResponseDTO>>> ListSelectCategories()
         {
-            throw new NotImplementedException();
+            var response = new BaseResponse<IEnumerable<CategorySelectResponseDTO>>();
+            var categories = await _unitOfWork.Category.ListSelectCategories();
+
+            if (categories is not null)
+            {
+                response.IsSucces = true;
+                response.Data = _mapper.Map<IEnumerable<CategorySelectResponseDTO>>(categories);
+                response.Message = ReplyMessages.MESSAGE_QUERY;
+            }
+            else
+            {
+                response.IsSucces = false;
+                response.Message = ReplyMessages.MESSAGE_QUERY_EMPTY;
+            }
+            return response
+
         }
         public Task<BaseResponse<CategoryResponseDTO>> CategoryById(int categoryId)
         {
