@@ -13,15 +13,15 @@ namespace POS.Infrastructure.Persistence.Contexts.Configurations
     {
         public void Configure(EntityTypeBuilder<DocumentType> builder)
         {
-            entity.HasKey(e => e.DocumentTypeId).HasName("PK__Document__DBA390E191DB539F");
+            builder.HasKey(e => e.DocumentTypeId).HasName("PK__Document__DBA390E191DB539F");
 
-            entity.Property(e => e.Abbreviation)
+            builder.Property(e => e.Abbreviation)
                 .HasMaxLength(5)
                 .IsUnicode(false);
-            entity.Property(e => e.Code)
+            builder.Property(e => e.Code)
                 .HasMaxLength(10)
                 .IsUnicode(false);
-            entity.Property(e => e.Name)
+            builder.Property(e => e.Name)
                 .HasMaxLength(255)
                 .IsUnicode(false);
         }

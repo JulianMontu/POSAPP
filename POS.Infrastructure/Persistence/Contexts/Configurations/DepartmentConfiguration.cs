@@ -13,9 +13,9 @@ namespace POS.Infrastructure.Persistence.Contexts.Configurations
     {
         public void Configure(EntityTypeBuilder<Department> builder)
         {
-            entity.HasKey(e => e.DepartmentId).HasName("PK__Departme__B2079BED47764AE6");
+            builder.HasKey(e => e.DepartmentId).HasName("PK__Departme__B2079BED47764AE6");
 
-            entity.Property(e => e.Name)
+            builder.Property(e => e.Name)
                 .HasMaxLength(100)
                 .IsUnicode(false);
         }
