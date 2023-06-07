@@ -13,5 +13,5 @@ namespace POS.Infrastructure.Persistence.Interfaces
 
         void SaveChanges();
         Task SaveChangesAsync();
-    }
+    } 
 }
